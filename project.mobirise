@@ -26,10 +26,12 @@
       ]
     },
     "versionFirst": "4.6.2",
-    "uniqCompNum": 12,
-    "versionPublish": "4.6.2",
+    "uniqCompNum": 13,
+    "versionPublish": "5.9.13",
     "path": "@PROJECT_PATH@",
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "siteFonts": [],
+    "imageResize": true
   },
   "pages": {
     "index.html": {
@@ -42,75 +44,6 @@
         "html_before": ""
       },
       "components": [
-        {
-          "_params": {
-            "showTitle": true,
-            "showText": true,
-            "showButtons": false,
-            "showArrow": true,
-            "contentAlign": "center",
-            "bgImageRadio": true,
-            "bgImage": "@PROJECT_PATH@/assets/images/cianfrusaglia-48x33-guitto-2020-1-1949x2835.jpg",
-            "parallax": true,
-            "bgColorRadio": false,
-            "bgColor": "#a07e49",
-            "bgVideoRadio": false,
-            "bgVideo": {
-              "url": "https://www.youtube.com/embed/zBf4d4Tq_Ik?rel=0&amp;showinfo=0&autoplay=0&loop=0",
-              "rawUrl": "https://youtu.be/zBf4d4Tq_Ik",
-              "width": 1280,
-              "height": 720
-            },
-            "overlay": true,
-            "overlayColor": "#825f50",
-            "overlayOpacity": "0.7"
-          },
-          "title": "El bar sota Mungiòv",
-          "text": "ORDINANZA CORONAVIRUS, IL GUITTO SI FERMA: ECCO LE NUOVE DATE<br>telefono 339 11 41 125&nbsp;",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">DOWNLOAD FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">DOWNLOAD FOR MAC</a>  ",
-          "_tags": [
-            "Tema"
-          ],
-          "_name": "header1",
-          "_anchor": "header1-0"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/manifesto-new-1-528x768.jpg",
-              "width": 1400,
-              "link": "",
-              "alt": "",
-              "title": ""
-            },
-            "video": {
-              "src": "https://www.youtube.com/embed/Tq7p44IA-1U"
-            }
-          },
-          "text": "Create awesome mobile-friendly websites. No coding and free.",
-          "_tags": [
-            "Tema"
-          ],
-          "_name": "image1",
-          "_anchor": "image1-b"
-        },
-        {
-          "_params": {
-            "paddingTop": 1,
-            "paddingBottom": 1,
-            "bgColor": "#fff"
-          },
-          "text": "<p>A seguito dell’ordinanza regionale del 25 febbraio 2020, la compagnia il Guitto impegnata nella 16esima edizione di Cianfrusaglia, comunica che, salvo ulteriori proroghe della stessa, le date in calendario per il 26 febbraio e 2 marzo dello spettacolo “El bar sota Mungiòv” <b>sono rinviate rispettivamente al 9 e 10 marzo.</b></p><p><br></p><p><b>I biglietti già emessi sono validi (con lo stesso posto),</b> per le nuove date secondo la seguente modalità:</p><p><br></p><p>I <b>biglietti di mercoledì 26 febbraio sono validi per lunedì 9 marzo</b></p><p><br></p><p>I <b>biglietti di lunedì 2 marzo sono validi per martedì 10 marzo</b>.</p><p><br></p><p>Per prenotazioni e informazioni si può <b>contattare il numero 339 1141125 </b>inoltre la <b>biglietteria rimarrà aperta</b>:</p><p><br></p><p><b>Mercoledì 26 febbraio ore 16.00 – 19.00</b></p><p><br></p><p><b>Sabato 29 febbraio ore 9.00 – 12.00.</b></p>",
-          "_tags": [
-            "Tema"
-          ],
-          "_name": "content1",
-          "_anchor": "content1-8"
-        },
         {
           "_inherit": "menu",
           "_params": {
@@ -195,7 +128,88 @@
           },
           "brand": "<a class=\"navbar-caption text-white\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"http://www.ilguitto.org\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\"><p>il guitto&nbsp;</p></a>",
           "_name": "ext.menu",
-          "_anchor": "ext_menu-1"
+          "_anchor": "ext_menu-1",
+          "_sourceTheme": "mobirise3"
+        },
+        {
+          "_params": {
+            "showTitle": true,
+            "showText": true,
+            "showButtons": false,
+            "showArrow": true,
+            "contentAlign": "center",
+            "bgImageRadio": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/argin-2024-1024x576.jpg",
+            "parallax": true,
+            "bgColorRadio": false,
+            "bgColor": "#a07e49",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/embed/zBf4d4Tq_Ik?rel=0&amp;showinfo=0&autoplay=0&loop=0",
+              "rawUrl": "https://youtu.be/zBf4d4Tq_Ik",
+              "width": 1280,
+              "height": 720
+            },
+            "overlay": true,
+            "overlayColor": "#825f50",
+            "overlayOpacity": "0.7"
+          },
+          "title": "Argin a passà l'acqua",
+          "text": "26-27-28 febbbraio 2024 - Politeama di Fano<br>telefono 389 13 69 434&nbsp;&nbsp;",
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">DOWNLOAD FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">DOWNLOAD FOR MAC</a>  ",
+          "_tags": [
+            "Tema"
+          ],
+          "_name": "header1",
+          "_anchor": "header1-0",
+          "_sourceTheme": "mobirise3"
+        },
+        {
+          "_params": {
+            "showText": false
+          },
+          "media": {
+            "image": {
+              "src": "@PROJECT_PATH@/assets/images/manifesto-new-1-528x768.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://youtu.be/SZKWlDWdDFQ?si=nKja8ip1Z8_UnNEp",
+              "autoplay": "on",
+              "loop": "on",
+              "active": true
+            }
+          },
+          "text": "Create awesome mobile-friendly websites. No coding and free.",
+          "_tags": [
+            "Tema"
+          ],
+          "_name": "image1",
+          "_anchor": "image1-b",
+          "_sourceTheme": "mobirise3"
+        },
+        {
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#fff"
+          },
+          "text": "<p>Fano, Politeama C. Rossi</p><p>Inizio spettacolo ore 21:15</p><p>Posto unico numerato: 13€</p><p><br></p><p>Prevendite:</p><p>Giovedì 22 e Venerdì 23 febbraio • Ore 16:00-19:00</p><p>Sabato 24 e Domenica 25 febbraio •&nbsp;<span style=\"font-size: 1.07rem;\">Ore 09:00-12:00/16:00-19:00</span></p><p>Info 0721.581250 - 3891369434</p>",
+          "_tags": [
+            "Tema"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-8",
+          "_sourceTheme": "mobirise3",
+          "_styles": {
+            "P": {
+              "font-family": "'Montserrat', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Montserrat:400,700"
+            }
+          }
         },
         {
           "_styles": {
@@ -224,7 +238,33 @@
             "Tema"
           ],
           "_name": "social-buttons2",
-          "_anchor": "social-buttons2-3"
+          "_anchor": "social-buttons2-3",
+          "_sourceTheme": "mobirise3"
+        },
+        {
+          "_params": {
+            "showText": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/manifesto-argin-2024-1-1042x1044.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "linkInNewWindow": false
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/Tq7p44IA-1U"
+            }
+          },
+          "text": "Create awesome mobile-friendly websites. No coding and free.",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image1",
+          "_sourceTheme": "mobirise3",
+          "_anchor": "image1-c"
         }
       ]
     }
