@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492 128" width="492" height="128">
+  <!-- Background rosso -->
+  <rect width="492" height="128" fill="#b30000"/>
+  
+  <!-- Testo "ilguitto" in bianco -->
+  <text x="246" y="95" 
+        font-family="Arial Black, Arial, Helvetica, sans-serif" 
+        font-size="72" 
+        font-weight="900" 
+        fill="#ffffff" 
+        text-anchor="middle"
+        letter-spacing="-3">ilguitto</text>
+</svg>

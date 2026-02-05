@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 150">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&amp;display=swap');
+      .brand-title {
+        font-family: 'Arial Black', 'Inter', sans-serif;
+        font-size: 110px;
+        font-weight: 900;
+        fill: #ffffff;
+        letter-spacing: -6px;
+        text-transform: lowercase;
+      }
+    </style>
+  </defs>
+  <text x="50%" y="110" text-anchor="middle" class="brand-title">ilguitto</text>
+</svg>
