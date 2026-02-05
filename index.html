@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Guitto - Compagnia Teatrale Amatoriale Fano</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="immagini/guittologo.jpg" alt="Il Guitto" style="height: 50px; width: auto;">
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#spettacoli">Spettacoli</a></li>
+                <li><a href="#chi-siamo">Chi Siamo</a></li>
+                <li><a href="#galleria">Galleria</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <img src="immagini/ilguitto_hero_logo.svg" alt="Il Guitto Logo" class="hero-logo">
+            </h1>
+            <p class="hero-subtitle">Compagnia Teatrale Amatoriale • Fano</p>
+            <a href="#spettacoli" class="btn-primary">Scopri i nostri spettacoli</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Spettacoli Section -->
+    <section id="spettacoli" class="section">
+        <div class="container">
+            <h2 class="section-title">In Scena</h2>
+
+            <!-- Video Trailer -->
+            <div class="video-container">
+                <a href="https://youtu.be/jSF34L2RS0s" target="_blank" rel="noopener" class="video-link">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/jSF34L2RS0s/maxresdefault.jpg"
+                            alt="Trailer dello spettacolo">
+                        <div class="play-button">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <circle cx="40" cy="40" r="40" fill="rgba(179, 0, 0, 0.9)" />
+                                <path d="M32 25L55 40L32 55V25Z" fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="video-caption">▶️ Guarda lo spot dello spettacolo su YouTube</p>
+                </a>
+            </div>
+
+            <div class="shows-grid">
+                <div class="show-card featured">
+                    <div class="show-image" style="height: auto; min-height: 400px;">
+                        <img src="immagini/sugina.png" alt="Tra un sogn e na sugina"
+                            style="width: 100%; height: 100%; object-fit: contain; background-color: #f5f5f5;">
+                        <div class="show-overlay">
+                            <span class="badge">2-3-4 Marzo 2026</span>
+                        </div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Tra un sogn e 'na "sugina"</h3>
+                        <p>Due atti di Stefano Guidi - Regia di Ugo Litti</p>
+                        <p class="show-details">
+                            <strong>📍 Fano Politeama C. Rossi</strong><br>
+                            Inizio spettacolo ore 21.15<br>
+                            Posto unico numerato: € 13,00<br>
+                            Info: 0721.581250 - 3381567888
+                        </p>
+                        <a href="#contatti" class="btn-link">Prenota biglietti →</a>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image placeholder-image"
+                        style="background: linear-gradient(135deg, #8b0000 0%, #b30000 100%);">
+                        <div class="placeholder-text">🎭</div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Archivio Spettacoli</h3>
+                        <p>I nostri successi dal 2009 ad oggi</p>
+                        <a href="#" class="btn-link">Esplora →</a>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image placeholder-image"
+                        style="background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);">
+                        <div class="placeholder-text">🎬</div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Laboratori Teatrali</h3>
+                        <p>Unisciti alla nostra compagnia</p>
+                        <a href="#" class="btn-link">Partecipa →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chi Siamo Section -->
+    <section id="chi-siamo" class="section section-dark">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="history-text-box">
+                        <h3>La Nostra Storia</h3>
+                        <div class="history-content">
+                            <p>La storia de "Il Guitto" affonda le radici nella tradizione del Carnevale di Fano di fine
+                                anni '70. Il gruppo nasce ufficialmente il 1° dicembre 1978 presso il teatro Luce di S.
+                                Orso a Rosciano.</p>
+
+                            <p>I fondatori e primi autori, Fausto Volpini e Filippo Guidi, consolidarono la compagnia
+                                iniziale. Tra il 1978 e il 1983, il gruppo si esibì costantemente nei teatri
+                                parrocchiali e nelle piazze locali.</p>
+
+                            <p>La consacrazione arrivò nel 1984 con la vittoria della rassegna "A teatro con la
+                                Fortuna". "Era mej quand giva peg", diretto da Franco Scatasta, fu il primo grande
+                                successo ufficiale.</p>
+
+                            <p>Nel 1985 iniziò la felice sperimentazione di adattare i classici di Molière nel dialetto
+                                locale. L'anno successivo, il debutto al Politeama segnò l'ingresso del gruppo
+                                nell'élite teatrale fanese.</p>
+
+                            <p>Dal 1987, la collaborazione con Glauco Faroni elevò sensibilmente la qualità delle
+                                produzioni. Il 1994 rappresentò una svolta con "Un piat de sardel", diretto dal regista
+                                Ortensio Rivelli.</p>
+
+                            <p>L'adattamento di "Rumori fuori scena" ottenne un successo di critica paragonabile ai
+                                professionisti. Sotto la guida di Augusto Spadoni (1996-97), la compagnia migliorò
+                                recitazione e riscontro di pubblico.</p>
+
+                            <p>Nel 1998, con Marco Florio, il gruppo affrontò Dario Fo ottenendo otto repliche al
+                                Politeama. Questo record di presenze sancì definitivamente il legame profondo tra Il
+                                Guitto e la sua città.</p>
+
+                            <p>Negli anni Duemila si susseguirono diversi registi, tra cui Ugo Litti e Franco Arcangeli.
+                                Negli ultimi anni, grazie a Alice Guidi il gruppo è cresciuto ancora ottenendo
+                                importanti riconoscimenti di pubblico e critica.</p>
+
+                            <p>La crescita qualitativa è proseguita nel tempo, portando a numerose rappresentazioni
+                                stagionali. Il Guitto ha saputo anche rinnovarsi dando vita ai gruppi giovani "Il
+                                Guittino" e "Tiramisù".</p>
+
+                            <p>Queste realtà satellite testimoniano la vitalità e la funzione educativa della compagnia
+                                madre.</p>
+
+                            <p class="history-tribute"><em>Un ricordo speciale va ad Angelo Guidi e Emanuele Emanuelli,
+                                    figure chiavi scomparse prematuramente. Il loro contributo tecnico e umano resta un
+                                    pilastro fondamentale dell'identità artistica del gruppo.</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">Chi Siamo</h2>
+                    <p class="about-text">
+                        Il Guitto è una compagnia teatrale amatoriale di Fano che da quasi 50 anni
+                        porta in scena spettacoli di qualità, coniugando passione e professionalità.
+                    </p>
+                    <p class="about-text">
+                        La nostra missione è diffondere la cultura teatrale nel territorio,
+                        coinvolgendo attori amatoriali e appassionati in produzioni che spaziano
+                        dal classico al contemporaneo.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">40+</span>
+                            <span class="stat-label">Anni di attività</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">40+</span>
+                            <span class="stat-label">Spettacoli prodotti</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Membri attivi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galleria Section -->
+    <section id="galleria" class="section">
+        <div class="container">
+            <h2 class="section-title">Galleria</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-large">
+                    <img src="immagini/89788675_2720062648043400_3644793871126233088_n.jpg"
+                        alt="Scena teatrale Il Guitto">
+                    <div class="gallery-overlay">
+                        <p>Spettacolo 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="immagini/image (2).png" alt="Attori sul palco">
+                    <div class="gallery-overlay">
+                        <p>Teatro classico</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="immagini/sugina (1).png" alt="Scenografia">
+                    <div class="gallery-overlay">
+                        <p>Dietro le quinte</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="immagini/ilguitto.png" alt="Dettaglio spettacolo">
+                    <div class="gallery-overlay">
+                        <p>Teatro contemporaneo</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-large">
+                    <img src="immagini/sfondo.png" alt="In scena">
+                    <div class="gallery-overlay">
+                        <p>Grande produzione</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti Section -->
+    <section id="contatti" class="section section-contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">Contatti</h2>
+                    <p class="contact-text">
+                        Vuoi saperne di più sulla nostra compagnia o partecipare ai nostri laboratori?
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Fano (PU), Italia</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <span>0721.581250 - 3381567888</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span><a href="mailto:info@ilguitto.it" class="__cf_email__">info@ilguitto.it</a></span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                                </path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Nome" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Messaggio" rows="5" required></textarea>
+                        <button type="submit" class="btn-primary">Invia Messaggio</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox container -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <img src="" alt="" class="lightbox-content">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Il Guitto - Compagnia Teatrale Amatoriale Fano. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
