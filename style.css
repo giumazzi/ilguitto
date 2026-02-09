@@ -1031,3 +1031,85 @@ h3 {
     display: block;
     margin-bottom: 0.5rem;
 }
+
+/* Hero Announcement Styles */
+.hero-announcement {
+    background: rgba(179, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(179, 0, 0, 0.3);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    transition: var(--transition);
+    animation: fadeInDown 1s ease-out 0.5s both;
+}
+
+.hero-announcement:hover {
+    background: rgba(179, 0, 0, 0.25);
+    transform: translateY(-5px);
+    border-color: rgba(179, 0, 0, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-badge {
+    display: inline-block;
+    background-color: var(--rosso);
+    color: var(--bianco);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+}
+
+.hero-announcement p {
+    font-size: 1.1rem;
+    margin: 0.3rem 0;
+    color: var(--bianco);
+}
+
+.hero-announcement strong {
+    color: var(--rosso);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.announcement-info {
+    font-size: 0.95rem !important;
+    opacity: 0.8;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-announcement {
+        padding: 1rem 1.5rem;
+        margin: 0 15px 2rem;
+    }
+
+    .hero-announcement p {
+        font-size: 1rem;
+    }
+
+    .hero-announcement strong {
+        font-size: 1.1rem;
+        display: block;
+        margin-top: 0.3rem;
+    }
+}
