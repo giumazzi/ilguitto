@@ -833,6 +833,36 @@ h3 {
     transform: translateY(-3px);
 }
 
+/* Twitter/X Dual Icon Transition */
+.x-twitter-link .icon-container {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.x-twitter-link .icon-bird,
+.x-twitter-link .icon-x {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.x-twitter-link .icon-x {
+    opacity: 0;
+    transform: scale(0.5) rotate(-20deg);
+}
+
+.x-twitter-link:hover .icon-bird {
+    opacity: 0;
+    transform: scale(0.5) rotate(20deg);
+}
+
+.x-twitter-link:hover .icon-x {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
