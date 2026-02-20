@@ -336,10 +336,11 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form class="contact-form">
-                        <input type="text" placeholder="Nome" required>
-                        <input type="email" placeholder="Email" required>
-                        <textarea placeholder="Messaggio" rows="5" required></textarea>
+                    <form class="contact-form" action="https://formspree.io/f/mqaeajyl" method="POST">
+                        <input type="text" name="nome" placeholder="Nome" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="tel" name="telefono" placeholder="Telefono (opzionale)">
+                        <textarea name="messaggio" placeholder="Messaggio" rows="5" required></textarea>
                         <button type="submit" class="btn-primary">Invia Messaggio</button>
                     </form>
                 </div>

@@ -62,22 +62,44 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Contact form submission
+// Contact form submission via AJAX (Formspree)
 const contactForm = document.querySelector('.contact-form');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        // Get form data
-        const formData = new FormData(contactForm);
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.textContent;
+        submitBtn.textContent = 'Invio in corso...';
+        submitBtn.disabled = true;
 
-        // Here you would typically send the data to a server
-        // For now, we'll just show an alert
-        alert('Grazie per il tuo messaggio! Ti contatteremo presto.');
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
 
-        // Reset form
-        contactForm.reset();
+            if (response.ok) {
+                alert('Grazie! Il tuo messaggio è stato inviato correttamente. Ti risponderemo al più presto.');
+                contactForm.reset();
+            } else {
+                const data = await response.json();
+                if (Object.hasOwn(data, 'errors')) {
+                    alert(data["errors"].map(error => error["message"]).join(", "));
+                } else {
+                    alert('Si è verificato un errore. Per favore, riprova più tardi.');
+                }
+            }
+        } catch (error) {
+            alert('Errore di connessione. Verifica la tua rete e riprova.');
+        } finally {
+            submitBtn.textContent = originalBtnText;
+            submitBtn.disabled = false;
+        }
     });
 }
 
