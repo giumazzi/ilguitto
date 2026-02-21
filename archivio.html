@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivio Spettacoli | Il Guitto Fano</title>
+    <meta name="description"
+        content="L'archivio storico delle produzioni teatrali de Il Guitto, compagnia amatoriale di Fano dal 1978.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="immagini/guittologo.jpg">
+    <style>
+        .archive-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('immagini/sfondo.png');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0 60px;
+            text-align: center;
+            color: white;
+        }
+
+        .archive-grid {
+            padding: 60px 0;
+        }
+
+        .show-card .show-year {
+            font-weight: 700;
+            color: var(--rosso);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html#home">
+                    <img src="immagini/guittologo.jpg" alt="Il Guitto" style="height: 50px; width: auto;">
+                </a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#spettacoli">Spettacoli</a></li>
+                <li><a href="archivio.html" class="active">Archivio</a></li>
+                <li><a href="index.html#chi-siamo">Chi Siamo</a></li>
+                <li><a href="index.html#galleria">Galleria</a></li>
+                <li><a href="index.html#contatti">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="archive-hero">
+        <div class="container">
+            <h1 class="section-title" style="color: white; margin-bottom: 1rem;">Archivio Spettacoli</h1>
+            <p style="font-size: 1.2rem; opacity: 0.9;">Oltre 40 anni di teatro, passione e tradizione fanese.</p>
+        </div>
+    </header>
+
+    <main class="archive-grid">
+        <div class="container">
+            <div class="shows-grid" id="container-spettacoli">
+                <!-- Gli spettacoli verranno caricati qui dinamicamente -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Il Guitto - Compagnia Teatrale Amatoriale Fano. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="spettacoli.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('container-spettacoli');
+
+            if (typeof dataSpettacoli !== 'undefined') {
+                dataSpettacoli.forEach(show => {
+                    const card = document.createElement('div');
+                    card.className = 'show-card fade-in';
+
+                    card.innerHTML = `
+                        <div class="show-image">
+                            <img src="${show.immagine}" alt="${show.titolo}">
+                        </div>
+                        <div class="show-content">
+                            <span class="show-year">${show.anno}</span>
+                            <h3>${show.titolo}</h3>
+                            <p style="font-style: italic; font-size: 0.9rem; margin-bottom: 0.5rem;">Regia di ${show.regia}</p>
+                            <p>${show.descrizione}</p>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+            }
+
+            // Mobile Menu Toggle logic
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
