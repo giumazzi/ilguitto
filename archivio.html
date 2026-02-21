@@ -85,13 +85,19 @@
     <!-- Scripts -->
     <script src="spettacoli.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        // Funzione per generare le card
+        function renderArchive() {
             const container = document.getElementById('container-spettacoli');
+            if (!container) return;
+
+            console.log('Avvio rendering archivio...');
 
             if (typeof dataSpettacoli !== 'undefined') {
-                dataSpettacoli.forEach(show => {
+                console.log('Dati trovati:', dataSpettacoli.length, 'spettacoli');
+                dataSpettacoli.forEach((show, index) => {
                     const card = document.createElement('div');
                     card.className = 'show-card fade-in';
+                    card.style.transitionDelay = `${index * 0.1}s`;
 
                     card.innerHTML = `
                         <div class="show-image">
@@ -105,17 +111,31 @@
                         </div>
                     `;
                     container.appendChild(card);
-                });
-            }
 
-            // Mobile Menu Toggle logic
+                    // Se l'observer di script.js è già pronto, lo usiamo subito
+                    if (window.observer) {
+                        window.observer.observe(card);
+                    }
+                });
+            } else {
+                console.error('Errore: dataSpettacoli non definita in spettacoli.js');
+                container.innerHTML = '<p style="color: white; text-align: center; grid-column: 1/-1;">Caricamento contenuti in corso o errore nel file spettacoli.js...</p>';
+            }
+        }
+
+        // Eseguiamo subito il rendering se il container esiste già
+        renderArchive();
+
+        // Fallback per menu mobile (che non dipende dal caricamento dei dati)
+        document.addEventListener('DOMContentLoaded', () => {
             const menuToggle = document.getElementById('menuToggle');
             const navLinks = document.getElementById('navLinks');
-
-            menuToggle.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-                menuToggle.classList.toggle('active');
-            });
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    menuToggle.classList.toggle('active');
+                });
+            }
         });
     </script>
     <script src="script.js"></script>
