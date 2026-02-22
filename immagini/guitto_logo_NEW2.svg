@@ -25,13 +25,13 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="0.7071068"
-     inkscape:cx="427.79959"
-     inkscape:cy="649.83111"
+     inkscape:zoom="1"
+     inkscape:cx="370.49999"
+     inkscape:cy="651.49998"
      inkscape:window-width="1427"
      inkscape:window-height="941"
-     inkscape:window-x="62"
-     inkscape:window-y="67"
+     inkscape:window-x="106"
+     inkscape:window-y="53"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1">
     <sodipodi:guide
@@ -48,6 +48,16 @@
        position="112.06611,210.75213"
        orientation="0,-1"
        id="guide12103"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="119.36257,128.62021"
+       orientation="0,-1"
+       id="guide244"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="112.62737,138.53591"
+       orientation="1,0"
+       id="guide246"
        inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
@@ -107,6 +117,10 @@
     <path
        d="m 23.195129,173.04319 v 4.33851 h 3.9914 3.991412 v -4.33851 -4.33851 h -3.991412 -3.9914 z"
        id="path1580"
+       style="fill:#ffffff;stroke-width:0.0347079" />
+    <path
+       d="m 112.93901,173.2441 v 4.33851 h 3.9914 3.99141 v -4.33851 -4.33851 h -3.99141 -3.9914 z"
+       id="path1580-7"
        style="fill:#ffffff;stroke-width:0.0347079" />
     <path
        d="m 33.260417,190.39719 v 21.69242 h 3.991402 3.991411 v -21.69242 -21.69251 h -3.991411 -3.991402 z"
