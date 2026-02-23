@@ -33,16 +33,23 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe cards
-document.querySelectorAll('.show-card').forEach(card => {
-    card.classList.add('fade-in');
-    observer.observe(card);
-});
+const observeElements = () => {
+    document.querySelectorAll('.show-card').forEach(card => {
+        card.classList.add('fade-in');
+        observer.observe(card);
+    });
 
-// Observe gallery items
-document.querySelectorAll('.gallery-item').forEach(item => {
-    item.classList.add('fade-in');
-    observer.observe(item);
-});
+    // Observe gallery items
+    document.querySelectorAll('.gallery-item').forEach(item => {
+        item.classList.add('fade-in');
+        observer.observe(item);
+    });
+};
+
+// Make observer accessible globally for dynamic content (Archive)
+window.observer = observer;
+window.observeElements = observeElements;
+observeElements();
 
 // Smooth scroll offset for fixed navbar
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -103,13 +110,20 @@ if (contactForm) {
     });
 }
 
-// Parallax effect on hero
+// Parallax effect on hero with requestAnimationFrame for performance
+let ticking = false;
 window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
 
-    if (hero && scrolled < window.innerHeight) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            if (hero && scrolled < window.innerHeight) {
+                hero.style.transform = `translateY(${scrolled * 0.4}px)`;
+            }
+            ticking = false;
+        });
+        ticking = true;
     }
 });
 
