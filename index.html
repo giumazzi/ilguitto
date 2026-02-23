@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preload LCP Image -->
+    <link rel="preload" href="immagini/guitto_logo_NEW2.svg" as="image" type="image/svg+xml" fetchpriority="high">
     <title>Il Guitto | Compagnia di Teatro Amatoriale Fano - Spettacoli in Dialetto Fanese</title>
     <meta name="description"
         content="Compagnia teatrale amatoriale di Fano dal 1978. Spettacoli in dialetto fanese al Teatro Politeama. Scopri il nostro repertorio e i prossimi eventi. Scopri gli spettacoli, le date e acquista i biglietti per le rappresentazioni al Teatro Politeama.">
@@ -17,8 +19,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/jpeg" href="immagini/guittologo.jpg">
-    <!-- Preload LCP Image -->
-    <link rel="preload" href="immagini/guitto_logo_NEW2.svg" as="image" type="image/svg+xml" fetchpriority="high">
 </head>
 
 <body>
@@ -52,8 +52,8 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="hero-title">
-                <img src="immagini/guitto_logo_NEW2.svg" alt="Il Guitto - Compagnia Teatrale Amatoriale di Fano"
-                    class="hero-logo" fetchpriority="high" decoding="async">
+                <img src="immagini/guitto_logo_NEW2.svg" alt="Il Guitto" class="hero-logo" fetchpriority="high"
+                    decoding="async" width="400" height="200">
             </h1>
             <a href="#dettagli-spettacolo" class="hero-announcement">
                 <p>Dal 2 marzo al Politeama di Fano</p>
@@ -75,10 +75,10 @@
 
             <!-- Video Trailer -->
             <div class="video-container">
-                <a href="https://youtu.be/TcuIaAZZ4Os" target="_blank" rel="noopener" class="video-link">
+                <a href="https://www.youtube.com/watch?v=TcuIaAZZ4Os" target="_blank" rel="noopener" class="video-link">
                     <div class="video-thumbnail">
-                        <img src="https://img.youtube.com/vi/TcuIaAZZ4Os/maxresdefault.jpg"
-                            alt="Trailer dello spettacolo">
+                        <img src="https://img.youtube.com/vi/TcuIaAZZ4Os/hqdefault.jpg" alt="Trailer dello spettacolo"
+                            width="640" height="360" decoding="async">
                         <div class="play-button">
                             <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
                                 <circle cx="40" cy="40" r="40" fill="rgba(179, 0, 0, 0.9)" />
@@ -96,7 +96,7 @@
                     <div class="show-image" style="height: auto; min-height: 400px;">
                         <img src="immagini/sugina.png" alt="Tra un sogn e na sugina"
                             style="width: 100%; height: 100%; object-fit: contain; background-color: #f5f5f5;"
-                            loading="lazy" decoding="async">
+                            decoding="async">
                         <div class="show-overlay">
                             <span class="badge">2-3-4 Marzo 2026</span>
                         </div>
@@ -146,10 +146,11 @@
 
                 <!-- Card 4: Archivio Video -->
                 <div class="show-card">
-                    <a href="https://youtu.be/jSF34L2RS0s" target="_blank" rel="noopener" class="show-image"
-                        style="text-decoration: none; position: relative; display: block;">
-                        <img src="https://img.youtube.com/vi/jSF34L2RS0s/maxresdefault.jpg" alt="Video Archivio"
-                            style="width: 100%; height: 100%; object-fit: cover;">
+                    <a href="https://www.youtube.com/watch?v=jSF34L2RS0s" target="_blank" rel="noopener"
+                        class="show-image" style="text-decoration: none; position: relative; display: block;">
+                        <img src="https://img.youtube.com/vi/jSF34L2RS0s/hqdefault.jpg" alt="Video Archivio"
+                            style="width: 100%; height: 100%; object-fit: cover;" width="640" height="360"
+                            loading="lazy" decoding="async">
                         <div class="play-button" style="transform: translate(-50%, -50%) scale(0.8);">
                             <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
                                 <circle cx="40" cy="40" r="40" fill="rgba(179, 0, 0, 0.9)" />
@@ -160,8 +161,8 @@
                     <div class="show-content">
                         <h3>Archivio Video</h3>
                         <p>Rivivi le emozioni delle nostre passate produzioni.</p>
-                        <a href="https://youtu.be/jSF34L2RS0s" target="_blank" rel="noopener" class="btn-link">Guarda su
-                            YouTube →</a>
+                        <a href="https://www.youtube.com/watch?v=jSF34L2RS0s" target="_blank" rel="noopener"
+                            class="btn-link">Guarda il video completo su YouTube →</a>
                     </div>
                 </div>
             </div>
@@ -258,31 +259,35 @@
             <div class="gallery-grid">
                 <div class="gallery-item gallery-large">
                     <img src="immagini/89788675_2720062648043400_3644793871126233088_n.jpg"
-                        alt="Scena teatrale Il Guitto" loading="lazy" decoding="async">
+                        alt="Scena teatrale Il Guitto" loading="lazy" decoding="async" width="600" height="400">
                     <div class="gallery-overlay">
                         <p>Spettacolo 2024</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="immagini/image (2).png" alt="Attori sul palco" loading="lazy" decoding="async">
+                    <img src="immagini/image (2).png" alt="Attori sul palco" loading="lazy" decoding="async" width="600"
+                        height="400">
                     <div class="gallery-overlay">
                         <p>Teatro classico</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="immagini/sugina.png" alt="Scenografia" loading="lazy" decoding="async">
+                    <img src="immagini/sugina.png" alt="Scenografia - Tra un sogn e na sugina" loading="lazy"
+                        decoding="async" width="600" height="400">
                     <div class="gallery-overlay">
                         <p>Dietro le quinte</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="immagini/ilguitto.png" alt="Dettaglio spettacolo" loading="lazy" decoding="async">
+                    <img src="immagini/ilguitto.png" alt="Dettaglio spettacolo Il Guitto" loading="lazy"
+                        decoding="async" width="600" height="400">
                     <div class="gallery-overlay">
                         <p>Teatro contemporaneo</p>
                     </div>
                 </div>
                 <div class="gallery-item gallery-large">
-                    <img src="immagini/sfondo.png" alt="In scena" loading="lazy" decoding="async">
+                    <img src="immagini/sfondo.png" alt="In scena - Il Guitto" loading="lazy" decoding="async"
+                        width="600" height="400">
                     <div class="gallery-overlay">
                         <p>Grande produzione</p>
                     </div>

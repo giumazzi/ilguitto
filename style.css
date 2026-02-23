@@ -1143,3 +1143,42 @@ h3 {
         margin-top: 0.3rem;
     }
 }
+
+/* YouTube Facade Optimization (Global) */
+.yt-facade {
+    position: relative;
+    cursor: pointer;
+    background: #000;
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    min-height: 200px;
+    aspect-ratio: 16/9;
+}
+
+.yt-facade img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.yt-facade:hover img {
+    transform: scale(1.03);
+}
+
+.yt-facade .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.yt-facade:hover .play-btn {
+    transform: translate(-50%, -50%) scale(1.1);
+}
