@@ -1182,3 +1182,16 @@ h3 {
 .yt-facade:hover .play-btn {
     transform: translate(-50%, -50%) scale(1.1);
 }
+
+/* Summer Tour Video Player Styles */
+.show-image video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.show-card:hover .show-image video {
+    transform: scale(1.04);
+}

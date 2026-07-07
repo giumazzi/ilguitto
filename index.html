@@ -87,31 +87,74 @@
             </div>
 
             <div class="shows-grid" id="dettagli-spettacolo">
-                <!-- Card 1: Manifesto e Prenotazione -->
+                <!-- Card 1: Fano Arena BCC (9 Luglio) -->
                 <div class="show-card">
-                    <div class="show-image" style="height: auto; min-height: 400px;">
-                        <img src="immagini/sugina.png" alt="Tra un sogn e na sugina"
-                            style="width: 100%; height: 100%; object-fit: contain; background-color: #f5f5f5;"
-                            decoding="async">
+                    <div class="show-image" style="height: auto; min-height: 250px;">
+                        <video controls style="width: 100%; height: 100%; object-fit: cover; display: block; background-color: #000;" poster="immagini/sugina.png" preload="metadata">
+                            <source src="Giovedì 9 luglio.mp4" type="video/mp4">
+                            Il tuo browser non supporta il tag video.
+                        </video>
                         <div class="show-overlay">
-                            <span class="badge">2-3-4 Marzo 2026</span>
+                            <span class="badge">9 Luglio 2026</span>
                         </div>
                     </div>
                     <div class="show-content">
-                        <h3>Tra un sogn e 'na "sugina"</h3>
-                        <p>Due atti di Stefano Guidi - Regia di Ugo Litti</p>
+                        <span style="font-weight: 700; color: var(--rosso); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">Fano • Teatro Arena BCC</span>
+                        <h3>Tra un sogn e... 'na sugina!</h3>
+                        <p>Commedia dialettale fanese in due atti - Regia di Alice Litti / Ugo Litti</p>
                         <p class="show-details">
-                            <strong>📍 Fano Politeama C. Rossi</strong><br>
+                            <strong>📍 Teatro Arena BCC Fano (Tre Ponti)</strong>
+                            Via Chiaruccia 16, Fano (PU)<br>
                             Inizio spettacolo ore 21.15<br>
-                            Posto unico numerato: € 13,00<br>
                             Info: 0721.581250 - 3381567888
                         </p>
-                        <a href="#contatti" class="btn-link">Prenota biglietti →</a>
+                        <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                            <p style="margin: 0; font-size: 0.9rem; color: var(--grigio); line-height: 1.5;">
+                                🎟️ <strong>Prevendite biglietti:</strong><br>
+                                • Presso il botteghino fisico dell'Arena BCC (aperto tutti i giorni dalle ore 18:00 alle 19:30).<br>
+                                • Online su Liveticket.
+                            </p>
+                            <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                                <a href="https://www.liveticket.it/" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem; border-radius: 6px;">Acquista su Liveticket</a>
+                                <a href="#contatti" class="btn-link" style="font-size: 0.9rem;">Info & Contatti →</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Card 2: La Trama -->
+                <!-- Card 2: Mondolfo Piazza del Comune (13 Luglio) -->
                 <div class="show-card">
+                    <div class="show-image" style="height: auto; min-height: 250px;">
+                        <img src="immagini/ilguitto.png" alt="Mondolfo Teatro in Piazza" style="width: 100%; height: 100%; object-fit: cover;" decoding="async">
+                        <div class="show-overlay">
+                            <span class="badge">13 Luglio 2026</span>
+                        </div>
+                    </div>
+                    <div class="show-content">
+                        <span style="font-weight: 700; color: var(--rosso); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">Mondolfo • Piazza del Comune</span>
+                        <h3>Tra un sogn e na sugina</h3>
+                        <p>22ª rassegna di teatro amatoriale "Teatro in Piazza" - Regia di Alice Litti (U. Litti)</p>
+                        <p class="show-details">
+                            <strong>📍 Piazza del Comune, Mondolfo (PU)</strong>
+                            Inizio spettacolo ore 21.15<br>
+                            Ingresso con rassegna locale.
+                        </p>
+                        <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                            <p style="margin: 0; font-size: 0.9rem; color: var(--grigio); line-height: 1.5;">
+                                📞 <strong>Contatti utili:</strong><br>
+                                • Museo Civico Mondolfo: <strong>366 5608563</strong><br>
+                                • Villa Valentina Marotta: <strong>0721 960665</strong>
+                            </p>
+                            <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                                <a href="https://www.facebook.com/comunedimondolfo" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem; border-radius: 6px; background-color: #3b5998; border-color: #3b5998;">Facebook Comune</a>
+                                <a href="tel:3665608563" class="btn-link" style="font-size: 0.9rem;">Chiama Museo →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: La Trama (Featured) -->
+                <div class="show-card featured">
                     <div class="synopsis-box">
                         <span class="synopsis-title">La Trama</span>
                         <div class="synopsis-text">
@@ -131,7 +174,7 @@
                     </div>
                 </div>
 
-                <!-- Card 3: Note di Regia -->
+                <!-- Card 4: Note di Regia -->
                 <div class="show-card">
                     <div class="show-content">
                         <h3>Note di Regia</h3>
@@ -140,7 +183,7 @@
                     </div>
                 </div>
 
-                <!-- Card 4: Archivio Video -->
+                <!-- Card 5: Archivio Video -->
                 <div class="show-card">
                     <a href="https://www.youtube.com/watch?v=jSF34L2RS0s" target="_blank" rel="noopener"
                         class="show-image" style="text-decoration: none; position: relative; display: block;">

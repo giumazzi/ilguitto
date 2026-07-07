@@ -3,18 +3,20 @@ const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 const navbar = document.getElementById('navbar');
 
-menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('active');
-    navLinks.classList.toggle('active');
-});
-
-// Close mobile menu when clicking on a link
-navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        menuToggle.classList.remove('active');
-        navLinks.classList.remove('active');
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
     });
-});
+
+    // Close mobile menu when clicking on a link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+}
 
 // Navbar scroll effect logic is handled by the debounced handleScroll below
 
@@ -174,38 +176,42 @@ window.addEventListener('load', () => {
 
 // Lightbox Functionality
 const lightbox = document.getElementById('lightbox');
-const lightboxImg = lightbox.querySelector('.lightbox-content');
-const lightboxCaption = lightbox.querySelector('.lightbox-caption');
-const lightboxClose = lightbox.querySelector('.lightbox-close');
+if (lightbox) {
+    const lightboxImg = lightbox.querySelector('.lightbox-content');
+    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+    const lightboxClose = lightbox.querySelector('.lightbox-close');
 
-galleryItems.forEach(item => {
-    item.addEventListener('click', () => {
-        const img = item.querySelector('img');
-        const caption = item.querySelector('.gallery-overlay p');
+    if (lightboxImg && lightboxClose) {
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                const caption = item.querySelector('.gallery-overlay p');
 
-        if (img && lightboxImg) {
-            lightboxImg.src = img.src;
-            lightboxImg.alt = img.alt;
-            if (caption && lightboxCaption) {
-                lightboxCaption.textContent = caption.textContent;
+                if (img) {
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    if (caption && lightboxCaption) {
+                        lightboxCaption.textContent = caption.textContent;
+                    }
+                    lightbox.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
+                }
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
             }
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        }
-    });
-});
-
-lightboxClose.addEventListener('click', () => {
-    lightbox.classList.remove('active');
-    document.body.style.overflow = 'auto';
-});
-
-lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
-        lightbox.classList.remove('active');
-        document.body.style.overflow = 'auto';
+        });
     }
-});
+}
 
 // Add hover effect sound preparation (optional)
 const hoverElements = document.querySelectorAll('.show-card, .gallery-item, .btn-primary');
